@@ -126,7 +126,7 @@ else:
     if "Overall" in piv:
         cols = ["Overall"] + [c for c in piv.columns if c != "Overall"]
         piv = piv[cols]
-    st.subheader(f"📋 {okr} — Monthly Table")
+    st.subheader(f"{okr} — Monthly Table")
     safe_piv = piv.fillna("").astype(str)
     st.dataframe(safe_piv)
 
