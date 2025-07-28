@@ -127,7 +127,8 @@ else:
         cols = ["Overall"] + [c for c in piv.columns if c != "Overall"]
         piv = piv[cols]
     st.subheader(f"📋 {okr} — Monthly Table")
-    st.dataframe(piv.fillna(""))
+    safe_piv = piv.fillna("").astype(str)
+    st.dataframe(safe_piv)
 
     if okr == "2.1 Active Platform Usage":
         plot_segment_trend(
@@ -142,6 +143,7 @@ else:
         )
     else:
         plot_overall_trend(okr, okr_subheaders.get(okr, ""))
+
 
 
 
