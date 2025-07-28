@@ -71,7 +71,7 @@ def plot_segment_trend(okr, seg, title_text, subtitle_text=""):
         fig.update_layout(
             xaxis_type='category',
             title={
-                'text': f"{title_text}<br><sup>{subtitle_text}</sup>",
+                'text': f"{title_text}<br><span style='font-size:13px'>{subtitle_text}</span>",
                 'x': 0.5,
                 'xanchor': 'center',
                 'font': {'size': 20},
@@ -93,7 +93,7 @@ def plot_overall_trend(okr, subtitle_text=""):
             fig.update_layout(
                 xaxis_type='category',
                 title={
-                    'text': f"{okr}<br><sup>{subtitle_text}</sup>",
+                    'text': f"{title_text}<br><span style='font-size:13px'>{subtitle_text}</span>",
                     'x': 0.5,
                     'xanchor': 'center',
                     'font': {'size': 20},
