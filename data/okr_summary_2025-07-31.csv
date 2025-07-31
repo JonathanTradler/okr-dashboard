@@ -1,0 +1,65 @@
+OKR,Segment,Metric,Value
+2.1 Active Platform Usage,Daily,% Users Active,57.7
+2.1 Active Platform Usage,Others,% Users Active,85.5
+3.1 Manager Participation,Azets,% Managers Active,85.29
+3.1 Manager Participation,Clinica,% Managers Active,33.33
+3.1 Manager Participation,Concentrix,% Managers Active,66.67
+3.1 Manager Participation,CPM,% Managers Active,61.9
+3.1 Manager Participation,Culligan,% Managers Active,30.77
+3.1 Manager Participation,Geodis,% Managers Active,75.0
+3.1 Manager Participation,Delco,% Managers Active,60.0
+3.1 Manager Participation,Scoober,% Managers Active,33.23
+3.1 Manager Participation,ABB,% Managers Active,78.57
+3.1 Manager Participation,PostNL,% Managers Active,52.88
+3.1 Manager Participation,Hays,% Managers Active,58.57
+3.2 Metric Hits,Azets,% Users Met Targets,0.0
+3.2 Metric Hits,Clinica,% Users Met Targets,94.59
+3.2 Metric Hits,Concentrix,% Users Met Targets,0.0
+3.2 Metric Hits,CPM,% Users Met Targets,49.12
+3.2 Metric Hits,Culligan,% Users Met Targets,42.86
+3.2 Metric Hits,Geodis,% Users Met Targets,88.17
+3.2 Metric Hits,Delco,% Users Met Targets,54.5
+3.2 Metric Hits,Scoober,% Users Met Targets,93.25
+3.2 Metric Hits,ABB,% Users Met Targets,27.78
+3.2 Metric Hits,PostNL,% Users Met Targets,87.57
+3.2 Metric Hits,Hays,% Users Met Targets,0.0
+4.1 Increase Voucher redemption,Azets,% Points Used from Eligible,38.02
+4.1 Increase Voucher redemption,Clinica,% Points Used from Eligible,80.27
+4.1 Increase Voucher redemption,Concentrix,% Points Used from Eligible,70.77
+4.1 Increase Voucher redemption,CPM,% Points Used from Eligible,93.13
+4.1 Increase Voucher redemption,Culligan,% Points Used from Eligible,20.19
+4.1 Increase Voucher redemption,Geodis,% Points Used from Eligible,59.81
+4.1 Increase Voucher redemption,Delco,% Points Used from Eligible,144.41
+4.1 Increase Voucher redemption,Scoober,% Points Used from Eligible,132.0
+4.1 Increase Voucher redemption,ABB,% Points Used from Eligible,13.8
+4.1 Increase Voucher redemption,PostNL,% Points Used from Eligible,1.74
+4.1 Increase Voucher redemption,Hays,% Points Used from Eligible,0.21
+4.2 Fight unspent points,Azets,% Points Redeemed from Available,7.53
+4.2 Fight unspent points,Clinica,% Points Redeemed from Available,0.52
+4.2 Fight unspent points,Concentrix,% Points Redeemed from Available,11.53
+4.2 Fight unspent points,CPM,% Points Redeemed from Available,14.65
+4.2 Fight unspent points,Culligan,% Points Redeemed from Available,3.22
+4.2 Fight unspent points,Geodis,% Points Redeemed from Available,21.32
+4.2 Fight unspent points,Delco,% Points Redeemed from Available,6.32
+4.2 Fight unspent points,Scoober,% Points Redeemed from Available,3.33
+4.2 Fight unspent points,ABB,% Points Redeemed from Available,65.22
+4.2 Fight unspent points,PostNL,% Points Redeemed from Available,3.01
+4.2 Fight unspent points,Hays,% Points Redeemed from Available,2.29
+4.3 Maximize Reached Population,Azets,% Active Users with Redemption,17.45
+4.3 Maximize Reached Population,Clinica,% Active Users with Redemption,0.0
+4.3 Maximize Reached Population,Concentrix,% Active Users with Redemption,14.29
+4.3 Maximize Reached Population,CPM,% Active Users with Redemption,18.99
+4.3 Maximize Reached Population,Culligan,% Active Users with Redemption,13.33
+4.3 Maximize Reached Population,Geodis,% Active Users with Redemption,37.89
+4.3 Maximize Reached Population,Delco,% Active Users with Redemption,30.4
+4.3 Maximize Reached Population,Scoober,% Active Users with Redemption,19.12
+4.3 Maximize Reached Population,ABB,% Active Users with Redemption,7.69
+4.3 Maximize Reached Population,PostNL,% Active Users with Redemption,13.22
+4.3 Maximize Reached Population,Hays,% Active Users with Redemption,0.99
+2.1 Active Platform Usage,Daily,Active User Rate,57.7
+2.1 Active Platform Usage,Others,Active User Rate,85.5
+3.1 Manager Participation,Overall,% Managers Active,58.57
+3.2 Metric Hits,Overall,% Users Met Targets,77.76
+4.1 Increase Voucher redemption,Overall,% Points Used from Eligible,8.21
+4.2 Fight unspent points,Overall,% Points Redeemed from Available,4.22
+4.3 Maximize Reached Population,Overall,% Active Users with Redemption,19.98

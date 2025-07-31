@@ -45,6 +45,10 @@ def load_all_data():
 
 combined = load_all_data()
 
+# Prevent duplicates causing stacked annotations
+combined = combined.groupby(["OKR", "Segment", "Month"], as_index=False).agg({"Value": "mean"})
+
+
 st.title("OKR Dashboard")
 
 # Sidebar Dropdown
@@ -64,10 +68,28 @@ okr_subheaders = {
 def plot_segment_trend(okr, seg, title_text, subtitle_text=""):
     data = combined[(combined["OKR"] == okr) & (combined["Segment"] == seg)]
     if len(data) > 1:
+        data = data.sort_values("Month")
+        data["Change"] = data["Value"].pct_change() * 100
+        data["Change_Label"] = data["Change"].apply(lambda x: f"{x:+.1f}%" if pd.notnull(x) else "")
+
         fig = px.line(
             data, x="Month", y="Value", markers=True,
             labels={"Value": "%"}, range_y=(0, 100)
         )
+
+        offset = 15  # same as all other OKRs
+
+        for i, row in data.iterrows():
+            if pd.notnull(row["Change"]):
+                fig.add_annotation(
+                    x=row["Month"],
+                    y=row["Value"],
+                    text=row["Change_Label"],
+                    showarrow=False,
+                    font=dict(size=12),
+                    yshift=offset
+                )
+
         fig.update_layout(
             xaxis_type='category',
             title={
@@ -86,10 +108,26 @@ def plot_overall_trend(okr, subtitle_text=""):
     if "Overall" in piv:
         series = piv["Overall"].dropna().reset_index()
         if len(series) > 1:
+            series = series.sort_values("Month")
+            series["Change"] = series["Overall"].pct_change() * 100
+            series["Change_Label"] = series["Change"].apply(lambda x: f"{x:+.1f}%" if pd.notnull(x) else "")
+
             fig = px.line(
                 series, x="Month", y="Overall", markers=True,
                 labels={"Overall": "%"}, range_y=(0, 100)
             )
+
+            for i, row in series.iterrows():
+                if pd.notnull(row["Change"]):
+                    fig.add_annotation(
+                        x=row["Month"],
+                        y=row["Overall"],
+                        text=row["Change_Label"],
+                        showarrow=False,
+                        font=dict(size=12),
+                        yshift=15
+                    )
+
             fig.update_layout(
                 xaxis_type='category',
                 title={
@@ -143,6 +181,8 @@ else:
         )
     else:
         plot_overall_trend(okr, okr_subheaders.get(okr, ""))
+
+
 
 
 
